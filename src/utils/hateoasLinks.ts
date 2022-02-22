@@ -30,6 +30,10 @@ export default class HateoasLinks {
           href: `${this.baseUrl}/${route}/${req._id}`,
           rel: 'self',
           method: 'DELETE'
+        },
+        parent: {
+          href: `${this.baseUrl}/${route}`,
+          rel: 'up'
         }
       }
     }
@@ -66,6 +70,10 @@ export default class HateoasLinks {
             href: `${this.baseUrl}/${route}/${pastry._id}`,
             rel: 'self',
             method: 'DELETE'
+          },
+          parent: {
+            href: `${this.baseUrl}/${route}`,
+            rel: 'up'
           }
         }
       }
